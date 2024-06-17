@@ -45,7 +45,7 @@ class LinkAlias(commands.Cog):
 
     @commands.hybrid_command()
     @describe(alias="Alias you want to add", link="Link to be accessed via the alias")
-    @commands.has_any_role(872083306668261437, 1000862083639943228)  # admin  # mod
+    @commands.has_any_role(872083306668261437, 1000862083639943228, 839485510161924097)  # admin  # mod
     @default_permissions(manage_guild=True)
     async def addalias(self, ctx: Context, alias: str, link: str):
         """
@@ -59,3 +59,4 @@ class LinkAlias(commands.Cog):
 
 async def setup(bot):
     await bot.add_cog(LinkAlias(bot))
+

@@ -21,10 +21,11 @@ class Archibald(commands.Bot):
             if not cog.startswith("__") and cog.endswith(".py"):
                 await self.load_extension(f"{cog_dir.replace('/','.')}.{cog[:-3]}")
 
-        # await self.tree.sync()
+        
 
     async def on_ready(self):
         print("Archibald is ready!")
+        # await self.tree.sync()
 
 
 bot = Archibald()
